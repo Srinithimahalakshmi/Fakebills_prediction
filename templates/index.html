@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KNN Bank Note Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Bank Note Authenticity Prediction</h2>
+        <form method="POST" action="/predict">
+            <input type="number" step="any" name="diagonal" placeholder="Diagonal" required>
+            <input type="number" step="any" name="height_left" placeholder="Height Left" required>
+            <input type="number" step="any" name="height_right" placeholder="Height Right" required>
+            <input type="number" step="any" name="margin_low" placeholder="Margin Low" required>
+            <input type="number" step="any" name="margin_up" placeholder="Margin Up" required>
+            <input type="number" step="any" name="length" placeholder="Length" required>
+            <button type="submit">Predict</button>
+        </form>
+        <h3>{{ prediction_text }}</h3>
+    </div>
+</body>
+</html>
