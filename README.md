@@ -119,7 +119,7 @@ See the [LICENSE](LICENSE) file for details.
 ## 📬 Contact
 
 👤 **Maintainer**: Srinithi Mahalakshmi
-📧 **Email**: [your.email@example.com](mailto:your.email@example.com)
+📧 **Email**: [srinithiarumugam2003@gmail.com]
 🔗 **GitHub**: [Srinithimahalakshmi](https://github.com/Srinithimahalakshmi)
 
 ---
