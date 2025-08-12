@@ -1,27 +1,134 @@
-# Fakebills_prediction
-## Goal
-The goal is to analyze the dimensions of Euro banknotes and determine whether a bill is a fake or a genuine one.
-## Dataset
-The dataset consists of 1500 banknotes, of which 1000 are genuine and 500 are fake. The data consists of six columns:
-* is_genuine: This is the target variable. It is 1 for genuine banknotes and 0 for fake banknotes.
-* length: The length of the banknote in mm.
-* left: The length of the left edge of the banknote in mm.
-* right: The length of the right edge of the banknote in mm.
-* bottom: The length of the bottom edge of the banknote in mm.
-* top: The length of the top edge of the banknote in mm.
-* diagonal: The length of the diagonal of the banknote in mm.
-## Steps Involved
-1. Data Analysis
-2. Model Training
-3. Model Evaluation
-4. Flask Deployment
-## Model
-I have built a Random Forest Classifier model to predict the genuineness of the banknotes.
-## Accuracy
-The model achieved an accuracy of 99.8%.
+ 🧾 Fakebills Prediction Using K-Nearest Neighbors (KNN)
 
-This repository demonstrates the following:
-* Data preprocessing and analysis.
-* Building a machine learning model using scikit-learn.
-* Deploying the model using Flask.
-* Creating a simple web interface to interact with the model.
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python Version](https://img.shields.io/badge/Python-3.x-blue.svg)]()
+
+## 📌 Overview
+This project uses **K-Nearest Neighbors (KNN)** to predict whether a bill is genuine or counterfeit 💰 based on features like dimensions 📏, weight ⚖️, and print quality 🖨️.  
+It includes:
+- 🔹 Data preprocessing
+- 🔹 Feature scaling
+- 🔹 Model training & evaluation
+- 🔹 A **Flask** web app for real-time predictions
+
+---
+
+## ✨ Features
+✅ **Data Preprocessing** – Cleans, scales, and prepares datasets 📊  
+✅ **Model Training** – Implements KNN for classification 🤖  
+✅ **Web Interface** – Flask app for live predictions 💻  
+✅ **Exploratory Analysis** – Visual insights 📈
+
+---
+
+## 📂 Table of Contents
+- [⚙️ Installation](#️-installation)
+- [🚀 Usage](#-usage)
+- [📁 Project Structure](#-project-structure)
+- [📊 Results](#-results)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
+- [📬 Contact](#-contact)
+
+---
+
+## ⚙️ Installation
+
+1. **Clone the repository**
+    ```bash
+    git clone https://github.com/Srinithimahalakshmi/Fakebills_prediction.git
+    cd Fakebills_prediction
+    ```
+
+2. **Set up virtual environment & install dependencies**
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate   # On Windows: venv\Scripts\activate
+    pip install -r requirements.txt
+    ```
+
+---
+
+## 🚀 Usage
+
+### 📓 Notebook Mode
+Run the notebook for model training & evaluation:
+```bash
+jupyter notebook model_training.ipynb
+````
+
+### 🌐 Flask App Mode
+
+Run the web app for predictions:
+
+```bash
+python app.py
+```
+
+Visit **[http://127.0.0.1:5000](http://127.0.0.1:5000)** and enter bill details to get a result 🏦.
+
+---
+
+## 📁 Project Structure
+
+| File / Folder             | Description                          |
+| ------------------------- | ------------------------------------ |
+| 📒 `model_training.ipynb` | EDA, training, evaluation, and plots |
+| 📂 `fake_bills.csv`       | Dataset                              |
+| 🖥️ `app.py`              | Flask web app                        |
+| 📂 `templates/`           | HTML files                           |
+| 🎨 `static/`              | CSS/JS files                         |
+| 💾 `model/`               | Trained model files                  |
+
+---
+
+## 📊 Results
+
+* **Accuracy**: `XX%` 📈
+* Includes confusion matrix, classification report, and graphs 📉📊
+  *(Update with actual metrics from your training)*
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+You can:
+
+* 🚀 Improve accuracy
+* 🎨 Enhance UI
+* 🐞 Fix bugs
+* 📚 Add documentation
+
+To contribute:
+
+1. Fork the repo 🍴
+2. Create a new branch 🌿
+3. Commit your changes 💾
+4. Open a Pull Request 📬
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📬 Contact
+
+👤 **Maintainer**: Srinithi Mahalakshmi
+📧 **Email**: [your.email@example.com](mailto:your.email@example.com)
+🔗 **GitHub**: [Srinithimahalakshmi](https://github.com/Srinithimahalakshmi)
+
+---
+
+💡 *If you like this project, don’t forget to ⭐ the repo!*
+
+```
+
+---
+
+If you want, I can make this into a **ready-to-download README.md file** so you can directly push it to your repo without copy-pasting. Would you like me to prepare that?
+```
